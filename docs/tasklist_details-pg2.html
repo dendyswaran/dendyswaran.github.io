@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Task List Details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- home page -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		
+
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container-fluid">
+	    
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="fa fa-bars"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav m-auto">
+	        	<li class="nav-item active"><a href="#" class="nav-link">Task List</a></li>
+	        	<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+              	<a class="dropdown-item" href="#">Page 1</a>
+                <a class="dropdown-item" href="#">Page 2</a>
+                <a class="dropdown-item" href="#">Page 3</a>
+                <a class="dropdown-item" href="#">Page 4</a>
+              </div>
+            </li>
+	          <li class="nav-item"><a href="#" class="nav-link">User Management</a></li>
+			  <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+	<br>
+	<div class="breadcumb">
+	<b>Task List Details</b>
+	</div>
+	
+	<div class="container px-md-6">
+		<div class="row justify-content-between">
+			
+			<!-- hard code -- cannot find offset settings in bootstrap (?) -->
+			<div class="col-md-3 d-flex"></div>
+
+			<div class="col-md-9 order-md-last">
+				<div class="row">
+					<div class="col-md-8 text-center">
+
+						<div class="table-responsive">
+							<!-- table-striped custom-table -->
+							<table class="table"> 
+								<thead>
+									<th scope="col">Site ID</th>
+									<th scope="col">Decom Vendor</th>
+									<th scope="col">Pick Up Date</th>
+									<th scope="col">Number of Equiments</th>	
+								</thead>
+								<tbody>
+									<td>C008009</td>
+									<td>1</td>
+									<td>6-Jun-2022</td>
+									<td>20</td>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <div class="container">
+		
+		<div class="table-responsive">
+		  <table class="table table-striped custom-table">
+			<!-- header -->
+			<thead>
+			  <tr>
+				<th scope="col">Equips</th>
+				<th scope="col">Make</th>
+				<th scope="col">Model</th>
+				<th scope="col">Serial No</th>
+			  </tr>
+			</thead>
+  
+			<tbody>
+
+			  <tr scope="row">
+				<td>Equip16</td>
+				<td>Make16</td>
+				<td>Model16</td>
+				<td>EQ000016</td>
+			  </tr>
+			  
+			  <tr scope="row">
+				<td>Equip17</td>
+				<td>Make17</td>
+				<td>Model17</td>
+				<td>EQ000017</td>
+			  </tr>
+
+			  <tr scope="row">
+				<td>Equip18</td>
+				<td>Make18</td>
+				<td>Model18</td>
+				<td>EQ000018</td>
+			  </tr>
+
+			  <tr scope="row">
+				<td>Equip19</td>
+				<td>Make19</td>
+				<td>Model19</td>
+				<td>EQ000019</td>
+			  </tr>
+
+			  <tr scope="row">
+				<td>Equip20</td>
+				<td>Make20</td>
+				<td>Model20</td>
+				<td>EQ000020</td>
+			  </tr>
+  
+			</tbody>
+		  </table>
+		  <a href="./tasklist_details.html">< Prev</a>
+		  <a href="#">Next ></a>
+		</div>
+	  </div>
+	  </div>
+
+	  <br>
+
+	  <div class="container">
+		<label for="remark"><strong>Remark</strong></label><br>
+		<input id="remark" style="width:100%;" placeholder="Enter Remark" type="text">
+	</div>
+	<br>
+
+	<!-- Hardcoded styles to be moved into css -->
+	<div class="container" style="text-align: right;">
+			<button type="button" onclick="alert('submitted!')">Submit</button>
+			<button type="button">Cancel</button>
+	 </div>
+
+
+	</section>
+
+	<!-- js from homepage -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- js from table -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	
+	</body>
+</html>
