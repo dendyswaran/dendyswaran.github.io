@@ -14,4 +14,14 @@
 			$this.find('.dropdown-menu').removeClass('show');
 	});
 
+	$("button.navbar-toggler").click(function() {
+		var that = $(this)[0]
+
+		var dataMenu = $(that).attr("data-menu");
+		var dataTarget = $(that).attr("data-target")
+
+		$(dataTarget).toggleClass("d-none")
+		$(dataMenu).toggleClass("d-none")
+	})
+
 })(jQuery);
