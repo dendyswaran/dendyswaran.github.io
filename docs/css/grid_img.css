@@ -1,0 +1,41 @@
+/* Image enlarge */
+/* set the common background settings for all the blocks */
+
+.enlarged, .thumbnail {
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  /* default enlarged image */
+  .enlarged { background-image: url(../images/01.jpg); }
+  
+  /* set the enlarged background-image based on the anchor you're hovering over */
+  .image-1, .image-1:hover ~ .enlarged { background-image: url(../images/01.jpg) !important; }
+  .image-2, .image-2:hover ~ .enlarged { background-image: url(../images/02.jpg) !important; }
+  .image-3, .image-3:hover ~ .enlarged { background-image: url(../images/03.jpg) !important; }
+  .image-4, .image-4:hover ~ .enlarged { background-image: url(../images/04.jpg) !important; }
+  .image-5, .image-5:hover ~ .enlarged { background-image: url(../images/05.jpg) !important; }
+  .image-6, .image-6:hover ~ .enlarged { background-image: url(../images/06.jpg) !important; }
+  
+  /* set the enlarged background-image based on the anchor you've clicked */
+  .image-1:target ~ .enlarged { background-image: url(../images/01.jpg); }
+  .image-2:target ~ .enlarged { background-image: url(../images/02.jpg); }
+  .image-3:target ~ .enlarged { background-image: url(../images/03.jpg); }
+  .image-4:target ~ .enlarged { background-image: url(../images/04.jpg); }
+  .image-5:target ~ .enlarged { background-image: url(../images/05.jpg); }
+  .image-6:target ~ .enlarged { background-image: url(../images/06.jpg); }
+  
+  /* Layout stuff. Don't worry TOO much about this, it can be accomplished using a variety of methods, I just like grids. */
+  .enlarged, .thumbnail { border: 1px solid #ccc; }
+  .thumbnail:hover, .thumbnail:target { border-color: red; }
+  .container {
+    display: grid;
+    height: 400px;
+    width: 600px;
+    grid: 1fr 1fr 1fr 1fr / 3fr 1fr 1fr;
+    grid-template-areas: 'enlarged thumb thumb'
+                         'enlarged thumb thumb'
+                         'enlarged thumb thumb';
+    grid-gap: 8px;
+  }
+  .enlarged { grid-area: enlarged; }

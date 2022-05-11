@@ -13,16 +13,8 @@
 			$this.find('> a').attr('aria-expanded', false);
 			$this.find('.dropdown-menu').removeClass('show');
 	});
-
+	
 	$("button.navbar-toggler").click(function() {
-
-		// reset the current appeared dropdown 
-		$(".custom-submenu").each(function(_v, _k) {
-			if (!$(_k).hasClass("d-none")) {
-				$(_k).addClass("d-none")
-			}
-		})
-
 		var that = $(this)[0]
 
 		var dataMenu = $(that).attr("data-menu");
@@ -31,5 +23,8 @@
 		$(dataTarget).toggleClass("d-none")
 		$(dataMenu).toggleClass("d-none")
 	})
+
+	$('#pick-date').pickadate();
+	
 
 })(jQuery);

@@ -4,6 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url(pagination.css);
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -3981,7 +3982,8 @@ input[type="button"].btn-block {
   margin-bottom: 1rem;
   list-style: none;
   background-color: #e9ecef;
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem; 
+}
 
 .breadcrumb-item + .breadcrumb-item {
   padding-left: 0.5rem; }
@@ -4080,7 +4082,7 @@ input[type="button"].btn-block {
 .badge {
   display: inline-block;
   padding: 0.25em 0.4em;
-  font-size: 75%;
+  font-size: 100%;
   font-weight: 700;
   line-height: 1;
   text-align: center;
@@ -6885,9 +6887,7 @@ button.bg-dark:focus {
 .mx-auto {
   margin-left: auto !important; }
 
-.breadcumb {
-	color: black !important;}
-}
+
 	
 @media (min-width: 576px) {
   .breadcumb {
@@ -8172,8 +8172,6 @@ h1, h2, h3, h4, h5,
 .bg-primary {
   background: #ff0000 !important; }
 
-
-
 .ftco-no-pt {
   padding-top: 0; }
 
@@ -8366,21 +8364,221 @@ h1, h2, h3, h4, h5,
       font-size: 16px;
       color: #fff; }
 
-.form-control {
-  height: 50px !important;
-  background: #fff !important;
-  color: #000 !important;
-  font-size: 14px;
-  border-radius: 0px;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  border: 1px solid rgba(0, 0, 0, 0.1); }
-  .form-control:focus, .form-control:active {
-    border-color: #000; }
+  .form-control {
+    height: 50px !important;
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 14px;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+    .form-control:focus, .form-control:active {
+      border-color: #000; }
+
+  /* Highest priority breadcum */
+  .breadcumb {
+    font-size: 30px;
+    color: darkslategray !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+  }
+  /* status: completed */
+  .green_emphasis {
+    color: green;
+    font-weight: bold;
+  }
+
+  /* view uploaded photos */
+  #iframe_upload_photo {
+    display:block;
+    height: 550px;
+    width:100%;
+  }
+  .view_img {
+    width: 120px;
+    height: 150px;
+    transition:transform 0.25s ease;
+  }
+  .view_img:hover {
+    -webkit-transform:scale(2);
+    transform:scale(2);
+  }
+
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  .radio_label {
+    padding-right: 50px;
+  }
+  .radio_container {
+    width: 40%
+  }
+  .add_btn {
+    width: 50px;
+  }
+
+  #iframe_add_equipment {
+    display:block;
+    height: 450px;
+    width:100%;
+  }
+
+  /*  view photo*/
+  .btn_container {
+    background-color: lightgray;
+    height: 200px;
+    width: 440px;
+  }
+  .myBtn {
+    background-color: black;
+    width: 49%;
+    height: 100%;
+    color: lightgray;
+    border: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+/* Add Equipments */
+.myButtons {
+    text-align:right;
+    padding-right: 5pt;
+}
+.button_styling {
+    background-color: deepskyblue;
+    color: white;
+}
+#input_text {
+    width: 99%;
+}
+
+/* basic styling */
+
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #fff; }
+
+p {
+  color: #b3b3b3;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+
+.content {
+  padding: 7rem 0; }
+
+h2 {
+  font-size: 20px; }
+
+/* top padding for smaller screen sizes (when become multiple rows)*/
+@media screen and (max-width: 980px) {
+  .col-sm-6 {
+    padding-top: 10px;
+    }
+}
 
 
+/* redefine btn_primary to red themed */
+.btn-primary {
+  color: #fff;
+  background-color: #B20600;
+  border-color: #F68989; }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #00092C;
+    border-color: #00092C; }
+  .btn-primary:focus, .btn-primary.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgb(238, 238, 238, 0.5);
+    box-shadow: 0 0 0 0.2rem rgb(238, 238, 238, 0.5); }
+  .btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #B20600;
+    border-color: #B20600; }
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #00092C;
+    border-color: #00092C; }
+    .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-primary.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgb(238, 238, 238, 0.5);
+      box-shadow: 0 0 0 0.2rem rgb(238, 238, 238, 0.5); }
 
-    @media (max-width: 991px) {
+
+  /* card view */
+  body{
+    background:#eee;
+  }
+  p {
+    color: white; 
+  }
+
+  .card {
+    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: 1rem;
+  }
+
+  .card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.5rem 1.5rem;
+  }
+  .avatar-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .avatar {
+    width: 3rem;
+    height: 3rem;
+  }
+  .rounded-3 {
+    border-radius: 0.5rem!important;
+  }
+  .mb-2 {
+    margin-bottom: 0.5rem!important;
+  }
+  .me-4 {
+    margin-right: 1.5rem!important;
+  }
+
+  .label_text {
+    color: white;
+  }
+  
+  	 @media (max-width: 991px) {
       #navbar {
         display: flex;
         flex-direction: column;
@@ -8396,4 +8594,4 @@ h1, h2, h3, h4, h5,
 
     .navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {        
       flex-wrap: wrap !important;
-  }
+  } 
