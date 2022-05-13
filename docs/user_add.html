@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Task List</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- home page -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+
+	<!-- table (makes no difference) -->
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/style.css"> -->
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		
+
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+
+			<div id="navbar" class="container-fluid">
+
+				<div class="d-flex w-100 justify-content-between d-xl-none">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" data-menu="#menu-left"
+						aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="fa fa-bars"></span> Menu
+					</button>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav-account" data-menu="#menu-right"
+						aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="fa fa-user"></span>
+					</button>
+				</div>
+
+				<div class="container collapse navbar-collapse justify-content-between px-lg-5 d-none d-lg-flex" id="ftco-nav">
+					<ul class="navbar-nav d-none d-lg-flex" id="menu-left">
+						<li class="nav-item"><a href="./tasklist.html" class="nav-link">Task List</a></li>
+						<li class="nav-item"><a href="./tasklist_decom_scrap.html" class="nav-link">Decom Task List</a></li>
+						<li class="nav-item"><a href="./tasklist_scrap.html" class="nav-link">Scrap Task List</a></li>
+						<li class="nav-item"><a href="./scraplist.html" class="nav-link">Enquiry</a></li>
+						<li class="nav-item"><a href="./upload_page.html" class="nav-link">file upload</a></li>
+						<li class="nav-item active"><a href="./user_management.html" class="nav-link">User Management</a></li>
+					</ul>
+
+					<ul class="navbar-nav d-none d-lg-flex">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdownAccount" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-user mr-1"></i>
+								Hi, Admin
+							</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownAccount">
+								<a class="dropdown-item" href="#">Profile</a>
+								<a class="dropdown-item" href="#">Logout</a>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+
+
+				<div class="container collapse navbar-collapse justify-content-between px-lg-5 d-none" id="ftco-nav-account">
+
+					<ul class="navbar-nav d-none" id="menu-right">
+						<li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Logout</a></li>
+					</ul>
+
+				</div>
+
+
+			</div>
+		</nav>
+    <!-- END nav -->
+	<br>
+	
+
+	<div class="container">
+		<div class="breadcumb">
+		<b class="header_title">USER MANAGEMENT</b>
+		</div>
+		
+	</div>
+	
+	<section class="vh-100 gradient-custom">
+	  <div class="container py-5">
+		<div class="row justify-content-center align-items-center h-100">
+		  <div class="col-12">
+			<div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+			  <div class="card-body p-4 p-md-5">
+				<h3 class="mb-4 pb-2 pb-md-0 mb-md-5">USER - ADD</h3>
+				<form>
+
+				  <div class="row">
+					<div class="col-md-6 mb-2">
+
+					  <div class="form-outline">
+						<label class="form-label" for="username">Username</label>
+						<input type="text" id="username" class="form-control form-control-lg input_text" />
+					  </div>
+
+					</div>
+					<div class="col-md-6 mb-2">
+
+					</div>
+				  </div>
+				  
+				  <div class="row">
+					<div class="col-md-6 mb-2">
+
+					  <div class="form-outline">
+						<label class="form-label" for="user">First Name</label>
+						<input type="text" id="firstName" class="form-control form-control-lg input_text" />
+					  </div>
+
+					</div>
+					<div class="col-md-6 mb-3">
+						<label class="form-label" for="lastName">Last Name</label>
+						<input type="text" id="lastName" class="form-control form-control-lg input_text" />
+					</div>
+				  </div>
+				  
+				  <div class="row">
+					<div class="col-md-6 mb-2">
+
+					  <div class="form-outline">
+						<label class="form-label" for="organization">Organization ID</label>
+						<input type="text" id="organization" class="form-control form-control-lg input_text" />
+					  </div>
+
+					</div>
+					<div class="col-md-6 mb-2">
+
+					</div>
+				  </div>
+
+
+				  <div class="row">
+					<div class="col-md-6 pb-2">
+
+					  <div class="form-outline">
+						<label class="form-label" for="emailAddress">Email</label>
+						<input type="email" id="emailAddress" class="form-control form-control-lg input_text" />
+					  </div>
+
+					</div>
+					<div class="col-md-6 mb-2 pb-2">
+
+					  <div class="form-outline">
+						<label class="form-label" for="phoneNumber">Phone Number</label>
+						<input type="tel" id="phoneNumber" class="form-control form-control-lg input_text" />
+					  </div>
+
+					</div>
+				  </div>
+
+				  <div class="row">
+					<div class="col-md-6">
+					<label class="form-label select-label">User Group</label>
+					  <select class="select form-control-lg input_text">
+						<option value="1">Choose option</option>
+						<option value="2">IOH</option>
+						<option value="3">Decom</option>
+						<option value="4">Scrap</option>
+					  </select>
+
+					</div>
+				  </div>
+
+				  <div class="mt-4 pt-2 text-right">
+					<input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+					<a href="./user_management.html" class="btn btn-primary btn-lg" type="submit">Cancel</a>
+				  </div>
+
+				</form>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</section>
+
+</body>
+
+
+
+	</div>
+  
+	
+
+	</section>
+
+	<!-- js from homepage -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- js from table -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	
+	</body>
+</html>
+

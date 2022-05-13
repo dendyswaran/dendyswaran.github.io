@@ -11,9 +11,8 @@
 	
 	<link rel="stylesheet" href="css/style.css">
 
+
 	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-
-
 
 	</head>
 	<body>
@@ -21,67 +20,78 @@
 		
 
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container-fluid">
-	    
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="fa fa-bars"></span> Menu
-	      </button>
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav m-auto">
-	        	<li class="nav-item active"><a href="#" class="nav-link">Task List</a></li>
-	        	<li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="#">Page 1</a>
-                <a class="dropdown-item" href="#">Page 2</a>
-                <a class="dropdown-item" href="#">Page 3</a>
-                <a class="dropdown-item" href="#">Page 4</a>
-              </div>
-            </li>
-	          <li class="nav-item"><a href="#" class="nav-link">User Management</a></li>
-			  <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
+
+			<div id="navbar" class="container-fluid">
+
+				<div class="d-flex w-100 justify-content-between d-xl-none">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" data-menu="#menu-left"
+						aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="fa fa-bars"></span> Menu
+					</button>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav-account" data-menu="#menu-right"
+						aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="fa fa-user"></span>
+					</button>
+				</div>
+
+				<div class="container collapse navbar-collapse justify-content-between px-lg-5 d-none d-lg-flex" id="ftco-nav">
+					<ul class="navbar-nav d-none d-lg-flex" id="menu-left">
+						<li class="nav-item active"><a href="./tasklist.html" class="nav-link">Task List</a></li>
+						<li class="nav-item"><a href="./tasklist_decom_scrap.html" class="nav-link">Decom Task List</a></li>
+						<li class="nav-item"><a href="./tasklist_scrap.html" class="nav-link">Scrap Task List</a></li>
+						<li class="nav-item"><a href="./scraplist.html" class="nav-link">Enquiry</a></li>
+						<li class="nav-item"><a href="./upload_page.html" class="nav-link">file upload</a></li>
+						<li class="nav-item"><a href="./user_management.html" class="nav-link">User Management</a></li>
+					</ul>
+
+					<ul class="navbar-nav d-none d-lg-flex">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdownAccount" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-user mr-1"></i>
+								Hi, Admin
+							</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownAccount">
+								<a class="dropdown-item" href="#">Profile</a>
+								<a class="dropdown-item" href="./index.html">Logout</a>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+
+
+				<div class="container collapse navbar-collapse justify-content-between px-lg-5 d-none" id="ftco-nav-account">
+
+					<ul class="navbar-nav d-none" id="menu-right">
+						<li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+						<li class="nav-item"><a href="./index.html" class="nav-link">Logout</a></li>
+
+					</ul>
+
+				</div>
+
+
+			</div>
+		</nav>
     <!-- END nav -->
 	<br>
-	<div class="breadcumb">
-	<b>Task List Details</b>
-	</div>
-	
-	<div class="container px-md-6">
-		<div class="row justify-content-between">
-			
-			<!-- hard code -- cannot find offset settings in bootstrap (?) -->
-			<div class="col-md-3 d-flex"></div>
 
-			<div class="col-md-9 order-md-last">
-				<div class="row">
-					<div class="col-md-8 text-center">
 
-						<div class="table-responsive">
-							<!-- table-striped custom-table -->
-							<table class="table"> 
-								<thead>
-									<th scope="col">Site ID</th>
-									<th scope="col">Decom Vendor</th>
-									<th scope="col">Pick Up Date</th>
-									<th scope="col">Number of Equiments</th>	
-								</thead>
-								<tbody>
-									<td>C008009</td>
-									<td>1</td>
-									<td>6-Jun-2022</td>
-									<td>20</td>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					</div>
-				</div>
-			</div>
+	<div class="container">
+		<div class="breadcumb">
+		<b class="header_title">TASK LIST DETAILS</b>
 		</div>
+		
+		<br>
+		<div class="row">
+			<div class="col-lg-3 col-sm-6"><strong>Site ID</strong><br> C008009</div>
+			<div class="col-lg-3 col-sm-6"><strong>Decom Vendor</strong><br> PT Cellsite</div>
+			<div class="col-lg-3 col-sm-6"><strong>No. of Equipments</strong><br> 20</div>
+			<div class="col-lg-3 col-sm-6"><strong>Pick Up Date</strong><br> 6-Jun-2022</div>
+		</div>
+
 	</div>
     
     <div class="container">
@@ -101,44 +111,73 @@
 			<tbody>
 
 			  <tr scope="row">
-				<td>Equip16</td>
-				<td>Make16</td>
-				<td>Model16</td>
-				<td>EQ000016</td>
+				<td>OSP Cable6</td>
+				<td>CommScope</td>
+				<td>O-CA</td>
+				<td>OSPC92721</td>
 			  </tr>
 			  
 			  <tr scope="row">
-				<td>Equip17</td>
-				<td>Make17</td>
-				<td>Model17</td>
-				<td>EQ000017</td>
+				<td>OSP Cable7</td>
+				<td>CommScope</td>
+				<td>O-CA</td>
+				<td>OSPC92757</td>
 			  </tr>
 
 			  <tr scope="row">
-				<td>Equip18</td>
-				<td>Make18</td>
-				<td>Model18</td>
-				<td>EQ000018</td>
+				<td>OSP Cable8</td>
+				<td>CommScope</td>
+				<td>O-CA</td>
+				<td>OSPC92737</td>
 			  </tr>
 
 			  <tr scope="row">
-				<td>Equip19</td>
-				<td>Make19</td>
-				<td>Model19</td>
-				<td>EQ000019</td>
+				<td>OSP Cable9</td>
+				<td>CommScope</td>
+				<td>O-CA</td>
+				<td>OSPC92784</td>
 			  </tr>
 
 			  <tr scope="row">
-				<td>Equip20</td>
-				<td>Make20</td>
-				<td>Model20</td>
-				<td>EQ000020</td>
+				<td>Sensor Dist Box</td>
+				<td>Autonics</td>
+				<td>PT8-3DN</td>
+				<td>SDB2844B1</td>
 			  </tr>
   
 			</tbody>
 		  </table>
-		  <a href="./tasklist_details.html">< Prev</a>
-		  <a href="#">Next ></a>
+
+			<!-- Standard Pagination -->
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-end">
+					<li class="page-item">
+						<a class="page-link" href="./tasklist_details.html">Previous</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="./tasklist_details.html">1</a></li>
+					<li class="page-item active" aria-current="page"><span class="page-link">2</span></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+					<a class="page-link" href="#">Next</a>
+					</li>
+				</ul>
+			</nav>
+
+
+
+			<!-- <div class="col-md-6 offset-2">
+			<div class="pagination-container wow zoomIn mar-b-1x" data-wow-duration="0.5s">
+				<ul class="pagination">
+					<li class="pagination-item--wide first"> <a class="pagination-link--wide first" href="./tasklist_details.html">Previous</a> </li>
+					<li class="pagination-item first-number"> <a class="pagination-link" href="./tasklist_details.html">1</a> </li>
+					<li class="pagination-item is-active"> <a class="pagination-link" href="#">2</a> </li>
+					<li class="pagination-item"> <a class="pagination-link" href="#">3</a> </li>
+					<li class="pagination-item"> <a class="pagination-link" href="#">4</a> </li>
+					<li class="pagination-item "> <a class="pagination-link" href="#">5</a> </li>
+					<li class="pagination-item--wide last"> <a class="pagination-link--wide last" href="#">Next</a> </li>
+				</ul>
+			</div>
+			</div> -->
 		</div>
 	  </div>
 	  </div>
@@ -153,8 +192,8 @@
 
 	<!-- Hardcoded styles to be moved into css -->
 	<div class="container" style="text-align: right;">
-			<button type="button" onclick="alert('submitted!')">Submit</button>
-			<button type="button">Cancel</button>
+			<button class="btn btn-primary px-4" type="button" onclick="alert('submitted!')">Submit</button>
+			<button class="btn btn-primary px-4" type="button">Cancel</button>
 	 </div>
 
 

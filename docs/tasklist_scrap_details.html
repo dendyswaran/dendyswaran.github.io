@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Scrap Task List Details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- home page -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="/fonts/icomoon/style.css">
+
+	<!-- date picker -->
+	<link rel="stylesheet" href="css/classic.css">
+	<link rel="stylesheet" href="css/classic.date.css">
+
+	<!-- bootstrap.css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- style.css -->
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		
+
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+
+			<div id="navbar" class="container-fluid">
+
+				<div class="d-flex w-100 justify-content-between d-xl-none">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" data-menu="#menu-left"
+						aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="fa fa-bars"></span> Menu
+					</button>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav-account" data-menu="#menu-right"
+						aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="fa fa-user"></span>
+					</button>
+				</div>
+
+				<div class="container collapse navbar-collapse justify-content-between px-lg-5 d-none d-lg-flex" id="ftco-nav">
+					<ul class="navbar-nav d-none d-lg-flex" id="menu-left">
+						<li class="nav-item"><a href="./tasklist.html" class="nav-link">Task List</a></li>
+						<li class="nav-item"><a href="./tasklist_decom_scrap.html" class="nav-link">Decom Task List</a></li>
+						<li class="nav-item active"><a href="./tasklist_scrap.html" class="nav-link">Scrap Task List</a></li>
+						<li class="nav-item"><a href="./scraplist.html" class="nav-link">Enquiry</a></li>
+						<li class="nav-item"><a href="./upload_page.html" class="nav-link">file upload</a></li>
+						<li class="nav-item"><a href="./user_management.html" class="nav-link">User Management</a></li>
+					</ul>
+
+					<ul class="navbar-nav d-none d-lg-flex">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdownAccount" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-user mr-1"></i>
+								Hi, Admin
+							</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownAccount">
+								<a class="dropdown-item" href="#">Profile</a>
+								<a class="dropdown-item" href="./index.html">Logout</a>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+
+
+				<div class="container collapse navbar-collapse justify-content-between px-lg-5 d-none" id="ftco-nav-account">
+
+					<ul class="navbar-nav d-none" id="menu-right">
+						<li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+						<li class="nav-item"><a href="./index.html" class="nav-link">Logout</a></li>
+
+					</ul>
+
+				</div>
+
+
+			</div>
+		</nav>
+
+    <!-- END nav -->
+	<br>
+
+	<div class="container">
+		<div class="breadcumb">
+			<b class="header_title">SCRAP TASK LIST DETAILS</b>
+		</div>
+
+		<br>
+		<div class="row">
+			<div class="col-lg-3 py-lg-0 col-6"><strong>Site ID</strong><br> C008009</div>
+			<div class="col-lg-3 py-lg-0 col-6"><strong>No. of Equipments</strong><br> 20</div>
+			<div class="col-lg-3 py-lg-0 col-6 py-2"><strong>To Pick Up</strong><br> 15-Jun-2022</div>
+			<div class="col-lg-3 py-lg-0 col-6 py-2"><strong>Actual Pick Up</strong>
+				<form action="#">
+					<div class="form-group">
+					  <input type="text" class="form-control" id="pick-date" placeholder="Pick A Date">
+					</div>
+				  </form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<!-- card 1 -->
+		<div class="card mb-3">
+			<div class="card-body">
+			  <div class="d-flex flex-column flex-lg-row">
+				<!-- <span class="avatar avatar-text rounded-3 me-4 mb-2">Antenna1</span> -->
+				<div class="row flex-fill">
+				  <div class="col-md-3 col-sm-12">
+					<h4 class="h5"><strong>Antenna1</strong></h4>
+					<span>This is some description</span>
+					<!-- <span class="badge bg-success label_text">Some Descriptions</span> -->
+				  </div>
+				  <div class="col-md-4 col-sm-12 py-2">
+					<span class="badge bg-secondary label_text">Televes</span>
+					<span class="badge bg-secondary label_text">149983 DAT BOSS</span>
+					<span class="badge bg-secondary label_text">EQ000001</span>
+				  </div>
+
+				  <div class="col-md-5 col-sm-12 py-2 text-lg-end">
+					<div>
+						<input id="match1" type="radio" name="match" value=1 checked="true">
+						<label class="radio_label" id="match_label1" for="match1">Match</label>
+	
+						<input id="missing1" type="radio" name="match" value=0>
+						<label class="radio_label" id="missing_label1" for="missing1">Missing</label>
+					</div>
+
+					<div class="upload_photo_btn">
+						<input type="file" id="file-input">
+						&#x1f441
+						&#10006
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<!-- card 2 -->
+		<div class="card mb-3">
+			<div class="card-body">
+			  <div class="d-flex flex-column flex-lg-row">
+				<!-- <span class="avatar avatar-text rounded-3 me-4 mb-2">Antenna1</span> -->
+				<div class="row flex-fill">
+				  <div class="col-md-3 col-sm-12">
+					<h4 class="h5"><strong>Antenna2</strong></h4>
+					<span>This is some description</span>
+					<!-- <span class="badge bg-success label_text">Some Descriptions</span> -->
+				  </div>
+				  <div class="col-md-4 col-sm-12 py-2">
+					<span class="badge bg-secondary label_text">Televes</span>
+					<span class="badge bg-secondary label_text">149983 DAT BOSS</span>
+					<span class="badge bg-secondary label_text">EQ000002</span>
+				  </div>
+
+				  <div class="col-md-5 col-sm-12 py-2 text-lg-end">
+					<div>
+						<input id="match2" type="radio" name="match2" value=1>
+						<label class="radio_label" id="match_label2" for="match2">Match</label>
+	
+						<input id="missing2" type="radio" name="match2" value=0 checked="true">
+						<label class="radio_label2" id="missing_label2" for="missing2">Missing</label>
+					</div>
+					<div>
+						<input type="text" placeholder="Enter Remarks">
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<!-- card 3 -->
+		<div class="card mb-3">
+			<div class="card-body">
+			  <div class="d-flex flex-column flex-lg-row">
+				<!-- <span class="avatar avatar-text rounded-3 me-4 mb-2">Antenna1</span> -->
+				<div class="row flex-fill">
+				  <div class="col-md-3 col-sm-12">
+					<h4 class="h5"><strong>RRU</strong></h4>
+					<span>Remote Radio Unit</span>
+					<!-- <span class="badge bg-success label_text">Some Descriptions</span> -->
+				  </div>
+				  <div class="col-md-4 col-sm-12 py-2">
+					<span class="badge bg-secondary label_text">Huawei</span>
+					<span class="badge bg-secondary label_text">RRU3801c</span>
+					<span class="badge bg-secondary label_text">RRUC09638</span>
+				  </div>
+
+				  <div class="col-md-5 col-sm-12 py-2 text-lg-end">
+					<td class="radio_container">
+						<input id="match3" type="radio" name="match3" value=1>
+						<label class="radio_label" id="match_label3" for="match2">Match</label>
+	
+						<input id="missing3" type="radio" name="match3" value=0>
+						<label class="radio_label3" id="missing_label3" for="missing2">Missing</label>
+					</td>
+	
+				  </div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<!-- card 4 -->
+		<div class="card mb-3">
+			<div class="card-body">
+			  <div class="d-flex flex-column flex-lg-row">
+				<!-- <span class="avatar avatar-text rounded-3 me-4 mb-2">Antenna1</span> -->
+				<div class="row flex-fill">
+				  <div class="col-md-3 col-sm-12">
+					<h4 class="h5"><strong>BBU</strong></h4>
+					<span>Base Band Unit</span>
+					<!-- <span class="badge bg-success label_text">Some Descriptions</span> -->
+				  </div>
+				  <div class="col-md-4 col-sm-12 py-2">
+					<span class="badge bg-secondary label_text">Huawei</span>
+					<span class="badge bg-secondary label_text">BBU3806c</span>
+					<span class="badge bg-secondary label_text">BBUR0193023</span>
+				  </div>
+
+				  <div class="col-md-5 col-sm-12 py-2 text-lg-end">
+					<td class="radio_container">
+						<input id="match4" type="radio" name="match4" value=1>
+						<label class="radio_label" id="match_label4" for="match4">Match</label>
+	
+						<input id="missing4" type="radio" name="match4" value=0>
+						<label class="radio_label4" id="missing_label4" for="missing4">Missing</label>
+					</td>
+				  </div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<!-- card 5  -->
+		<div class="card mb-3">
+			<div class="card-body">
+			  <div class="d-flex flex-column flex-lg-row">
+				<!-- <span class="avatar avatar-text rounded-3 me-4 mb-2">Antenna1</span> -->
+				<div class="row flex-fill">
+				  <div class="col-md-3 col-sm-12">
+					<h4 class="h5"><strong>MW Antenna</strong></h4>
+					<span>Microwave Antenna</span>
+					<!-- <span class="badge bg-success label_text">Some Descriptions</span> -->
+				  </div>
+				  <div class="col-md-4 col-sm-12 py-2">
+					<span class="badge bg-secondary label_text">Com-Power</span>
+					<span class="badge bg-secondary label_text">ANM-6000</span>
+					<span class="badge bg-secondary label_text">MWA17284C</span>
+				  </div>
+
+				  <div class="col-md-5 col-sm-12 py-2 text-lg-end">
+					<td class="radio_container">
+						<input id="match5" type="radio" name="match5" value=1>
+						<label class="radio_label" id="match_label5" for="match5">Match</label>
+	
+						<input id="missing5" type="radio" name="match5" value=0>
+						<label class="radio_label5" id="missing_label5" for="missing5">Missing</label>
+					</td>
+				  </div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+    <div class="container">
+		<div class="table-responsive">
+			<!-- Standard Pagination -->
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-end">
+					<li class="page-item disabled">
+						<a class="page-link">Previous</a>
+					</li>
+					<li class="page-item active" aria-current="page">
+						<span class="page-link">1</span>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+					<a class="page-link" href="#">Next</a>
+					</li>
+				</ul>
+			</nav>
+
+		  <!-- <div class="col-md-6 offset-2">
+			<div class="pagination-container wow zoomIn mar-b-1x" data-wow-duration="0.5s">
+				<ul class="pagination">
+					<li class="pagination-item--wide first"> <a class="pagination-link--wide first" href="#">Previous</a> </li>
+					<li class="pagination-item first-number is-active"> <a class="pagination-link" href="#">1</a> </li>
+					<li class="pagination-item"> <a class="pagination-link" href="#">2</a> </li>
+					<li class="pagination-item"> <a class="pagination-link" href="#">3</a> </li>
+					<li class="pagination-item"> <a class="pagination-link" href="#">4</a> </li>
+					<li class="pagination-item"> <a class="pagination-link" href="#">5</a> </li>
+					<li class="pagination-item--wide last"> <a class="pagination-link--wide last" href="#">Next</a> </li>
+				</ul>
+			</div>
+		  </div> -->
+
+		  <div style="text-align: right;">
+			<a data-toggle="modal" data-target="#addEquipment" href="#" class="btn btn-primary add_btn">&#10010</a>
+		  </div>
+		  <br>
+
+			<!-- Hardcoded styles to be moved into css -->
+			<div style="text-align: right;">
+					<button type="button" class="btn btn-primary px-4" onclick="alert('saved!')">Save</button>
+					<button type="button" class="btn btn-primary px-4" onclick="alert('submitted!')">Submit</button>
+					<button type="button" class="btn btn-primary px-4">Cancel</button>
+			</div>
+
+			</div>
+	  	</div>
+	  </div>
+
+	<br>
+	</section>
+
+	<!-- js from homepage -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/picker.js"></script>
+	<script src="js/picker.date.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/decom_scrap_task_list_details.js"></script>
+
+
+	<!-- js from table -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	
+	</body>
+
+
+	<!-- Add Equipment here -->
+	<div class="modal fade" id="addEquipment" tabindex="-1" role="dialog" aria-labelledby="addEquipmentLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<h5 class="modal-title" id="addEquipmentLabel">Add Equipment</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+
+			<!-- Content of modal view -->
+			<div class="modal-body">
+				<iframe id="iframe_add_equipment" frameBorder="0" src="./add_equipment.html">
+			</div>
+
+			<!-- Modal footer not showing -->
+			<div class="modal-footer">
+			<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button> -->
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+</html>
