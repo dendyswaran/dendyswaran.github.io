@@ -44,12 +44,12 @@
 
 				<div class="container collapse navbar-collapse justify-content-between px-lg-5 d-none d-lg-flex" id="ftco-nav">
 					<ul class="navbar-nav d-none d-lg-flex" id="menu-left">
-						<li class="nav-item active"><a href="./tasklist.html" class="nav-link">Task List</a></li>
+						<li class="nav-item"><a href="./tasklist.html" class="nav-link">Task List</a></li>
 						<li class="nav-item"><a href="./tasklist_decom_scrap.html" class="nav-link">Decom Task List</a></li>
-						<li class="nav-item"><a href="./tasklist_scrap.html" class="nav-link">Scrap Task List</a></li>
-						<li class="nav-item"><a href="./scraplist.html" class="nav-link">Scrap List</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">User Management</a></li>
+						<li class="nav-item active"><a href="./tasklist_scrap.html" class="nav-link">Scrap Task List</a></li>
+						<li class="nav-item"><a href="./scraplist.html" class="nav-link">Enquiry</a></li>
+						<li class="nav-item"><a href="./upload_page.html" class="nav-link">file upload</a></li>
+						<li class="nav-item"><a href="./user_management.html" class="nav-link">User Management</a></li>
 					</ul>
 
 					<ul class="navbar-nav d-none d-lg-flex">
@@ -61,7 +61,7 @@
 							</a>
 							<div class="dropdown-menu" aria-labelledby="dropdownAccount">
 								<a class="dropdown-item" href="#">Profile</a>
-								<a class="dropdown-item" href="#">Logout</a>
+								<a class="dropdown-item" href="./index.html">Logout</a>
 							</div>
 						</li>
 
@@ -73,7 +73,7 @@
 
 					<ul class="navbar-nav d-none" id="menu-right">
 						<li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Logout</a></li>
+						<li class="nav-item"><a href="./index.html" class="nav-link">Logout</a></li>
 
 					</ul>
 
@@ -93,10 +93,10 @@
 
 		<br>
 		<div class="row">
-			<div class="col-lg-3 col-sm-6"><strong>Site ID</strong><br> C008009</div>
-			<div class="col-lg-3 col-sm-6"><strong>No. of Equipments</strong><br> 20</div>
-			<div class="col-lg-3 col-sm-6"><strong>Planned Date</strong><br> 15-Jun-2022</div>
-			<div class="col-lg-3 col-sm-6"><strong>Actual Date</strong>
+			<div class="col-lg-3 py-lg-0 col-6"><strong>Site ID</strong><br> C008009</div>
+			<div class="col-lg-3 py-lg-0 col-6"><strong>No. of Equipments</strong><br> 20</div>
+			<div class="col-lg-3 py-lg-0 col-6 py-2"><strong>To Pick Up</strong><br> 15-Jun-2022</div>
+			<div class="col-lg-3 py-lg-0 col-6 py-2"><strong>Actual Pick Up</strong>
 				<form action="#">
 					<div class="form-group">
 					  <input type="text" class="form-control" id="pick-date" placeholder="Pick A Date">
@@ -106,7 +106,6 @@
 		</div>
 	</div>
 	
-	<br>
 	<div class="container">
 		<!-- card 1 -->
 		<div class="card mb-3">
@@ -187,7 +186,7 @@
 				<div class="row flex-fill">
 				  <div class="col-md-3 col-sm-12">
 					<h4 class="h5"><strong>RRU</strong></h4>
-					<span>This is some description</span>
+					<span>Remote Radio Unit</span>
 					<!-- <span class="badge bg-success label_text">Some Descriptions</span> -->
 				  </div>
 				  <div class="col-md-4 col-sm-12 py-2">
@@ -219,7 +218,7 @@
 				<div class="row flex-fill">
 				  <div class="col-md-3 col-sm-12">
 					<h4 class="h5"><strong>BBU</strong></h4>
-					<span>This is some description</span>
+					<span>Base Band Unit</span>
 					<!-- <span class="badge bg-success label_text">Some Descriptions</span> -->
 				  </div>
 				  <div class="col-md-4 col-sm-12 py-2">
@@ -250,7 +249,7 @@
 				<div class="row flex-fill">
 				  <div class="col-md-3 col-sm-12">
 					<h4 class="h5"><strong>MW Antenna</strong></h4>
-					<span>This is some description</span>
+					<span>Microwave Antenna</span>
 					<!-- <span class="badge bg-success label_text">Some Descriptions</span> -->
 				  </div>
 				  <div class="col-md-4 col-sm-12 py-2">
@@ -307,6 +306,10 @@
 			</div>
 		  </div> -->
 
+		  <div style="text-align: right;">
+			<a data-toggle="modal" data-target="#addEquipment" href="#" class="btn btn-primary add_btn">&#10010</a>
+		  </div>
+		  <br>
 
 			<!-- Hardcoded styles to be moved into css -->
 			<div style="text-align: right;">
@@ -329,6 +332,8 @@
 	<script src="js/picker.js"></script>
 	<script src="js/picker.date.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/decom_scrap_task_list_details.js"></script>
+
 
 	<!-- js from table -->
 	<script src="js/jquery-3.3.1.min.js"></script>
