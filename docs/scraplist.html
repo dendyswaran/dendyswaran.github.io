@@ -1,14 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Scrap List</title>
+  	<title>Scrap List Enquiry</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- home page -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+	<!-- Style -->
 	<link rel="stylesheet" href="css/style.css">
 
 
@@ -46,12 +54,12 @@
 
 				<div class="container collapse navbar-collapse justify-content-between px-lg-5 d-none d-lg-flex" id="ftco-nav">
 					<ul class="navbar-nav d-none d-lg-flex" id="menu-left">
-						<li class="nav-item active"><a href="./tasklist.html" class="nav-link">Task List</a></li>
+						<li class="nav-item"><a href="./tasklist.html" class="nav-link">Task List</a></li>
 						<li class="nav-item"><a href="./tasklist_decom_scrap.html" class="nav-link">Decom Task List</a></li>
 						<li class="nav-item"><a href="./tasklist_scrap.html" class="nav-link">Scrap Task List</a></li>
-						<li class="nav-item"><a href="./scraplist.html" class="nav-link">Scrap List</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">User Management</a></li>
+						<li class="nav-item active"><a href="./scraplist.html" class="nav-link">Enquiry</a></li>
+						<li class="nav-item"><a href="./upload_page.html" class="nav-link">file upload</a></li>
+						<li class="nav-item"><a href="./user_management.html" class="nav-link">User Management</a></li>
 					</ul>
 
 					<ul class="navbar-nav d-none d-lg-flex">
@@ -63,7 +71,7 @@
 							</a>
 							<div class="dropdown-menu" aria-labelledby="dropdownAccount">
 								<a class="dropdown-item" href="#">Profile</a>
-								<a class="dropdown-item" href="#">Logout</a>
+								<a class="dropdown-item" href="./index.html">Logout</a>
 							</div>
 						</li>
 
@@ -75,7 +83,7 @@
 
 					<ul class="navbar-nav d-none" id="menu-right">
 						<li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Logout</a></li>
+						<li class="nav-item"><a href="./index.html" class="nav-link">Logout</a></li>
 
 					</ul>
 
@@ -87,53 +95,73 @@
     <!-- END nav -->
 	<br>
 
+
 	<div class="container">
 		<div class="breadcumb">
-			<b class="header_title">SCRAP LIST</b>
+			<b class="header_title">SCRAP LIST ENQUIRY</b>
 		</div>
 		<br>
+
+		
 		  
-		<form action="#" class="booking-form">
-			<div class="row">
-				<div class="col-md mb-md-0 mb-1">
-					<div class="form-group">
-					  	<div class="form-field">
-							<input type="text" class="form-control" placeholder="Enter Site ID">
-				  		</div>
-			  		</div>
-				</div>
-				
-				<div class="col-md mb-md-0 mb-1">
-					<div class="form-group">
-					  	<div class="form-field">
-							<input type="text" class="form-control" placeholder="Enter Decom Vendor">
-				  		</div>
-			  		</div>
-				</div>
+		<section class="ftco-search">
+			<form action="#" class="booking-form">
+				<div class="row">
+					<div class="col-lg-2 col-6 mb-md-0 mb-1">
+						<div class="form-group">
+							  <div class="form-field">
+								<input  type="text" class="search_bar form-control" placeholder="Enter Site ID">
+							  </div>
+						  </div>
+					</div>
 
-				<div class="col-md mb-md-0 mb-1">
-					<div class="form-group">
-					  	<div class="form-field">
-							<input type="text" class="form-control" placeholder="Enter Status">
-				  		</div>
-			  		</div>
-				</div>
+			
+					<div class="col-lg-2 col-6 mb-md-0 mb-1">
+						<div class="form-group">
+							  <div class="form-field">
+								<input type="text" class="search_bar form-control" placeholder="Enter Decom Vendor">
+							  </div>
+						  </div>
+					</div>
+					<div class="col-lg-2 col-6 mb-md-0 mb-1">
+						<div class="form-group">
+							  <div class="form-field">
+								<input type="text" class="search_bar form-control" placeholder="Enter Scrap Vendor">
+							  </div>
+						  </div>
+					</div>
 
-				<div class="col-md mb-md-0 mb-1">
-					<div class="form-group">
-					  	<div class="form-field">
-							<input type="text" class="form-control" placeholder="Enter Scrap Vendor">
-				  		</div>
-			  		</div>
-				</div>
+					<div class="col-lg-3 col-6 mb-md-0 mb-1">
+						<div class="form-group">
+							  <div class="form-field">
 
-				<div class="col-md d-flex align-items-end mb-md-0 mb-1">
-					<div class="form-group">
-				  		<a href="#" class="btn btn-primary px-4 align-self-stretch d-block"><span>Search</span></a>
+								<!-- With styling but option wont persist -->
+								<div class="dropdown custom-dropdown">
+									<a href="#" data-toggle="dropdown" class="dropdown-link" aria-haspopup="true" aria-expanded="false">
+										<span class="icon-arrow-circle-o-down mr-3"></span><span id="status_bar">Status</span>
+									</a>
+	
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a id="status1" class="status_menu_item dropdown-item" value="1">New</a>
+										<a id="status2" class="status_menu_item dropdown-item" value="2">Pending Decom</a>
+										<a id="status3" class="status_menu_item dropdown-item" value="3">Pending Scrap</a>
+										<a id="status4" class="status_menu_item dropdown-item" value="4">Completed</a>
+									  </div>
+								</div>
+
+							  </div>
+							
+						  </div>
+					</div>
+
+					<div class="search_btn col-lg-2 offset-lg-1 offset-8 col-4 align-items-end mb-md-0 mb-1">
+						<div class="form-group">
+							  <a href="#" class="btn btn-primary px-4 align-self-stretch d-block"><span>Search</span></a>
+						</div>
 					</div>
 				</div>
-			</div>
-		</form>
+			</form>
+		</section>
 	</div>
 
 	<div class="container">
@@ -150,8 +178,8 @@
 				</div>
 				<div class="col-sm-6 py-2">
 				  <!-- <span class="badge bg-secondary label_text">Antenna1</span> -->
-				  <span class="badge bg-secondary label_text">PT Cellsite (Decom Vendor)</span>
-				  <span class="badge bg-secondary label_text">PT Dexter (Scrap Vendor)</span>
+				  <span class="badge bg-secondary label_text">PT Cellsite</span>
+				  <span class="badge bg-secondary label_text">PT Dexter</span>
 				</div>
 			  </div>
 			</div>
@@ -168,8 +196,8 @@
 					<h4 class="h5"><strong><a href="#" class="name">C008015</a></strong></h4>
 				  </div>
 				  <div class="col-sm-6 py-2">
-					  <span class="badge bg-secondary label_text">Decom Vendor 22</span>
-					  <span class="badge bg-secondary label_text">Scrap Vendor 22</span>
+					  <span class="badge bg-secondary label_text">PT Aspex</span>
+					  <span class="badge bg-secondary label_text">PT Tata</span>
 				  </div>
 				</div>
 			  </div>
@@ -186,8 +214,8 @@
 					<h4 class="h5"><strong><a href="#" class="name">C008020</a></strong></h4>
 				  </div>
 				  <div class="col-sm-6 py-2">
-					  <span class="badge bg-secondary label_text">Decom Vendor 1</span>
-					  <span class="badge bg-secondary label_text">Scrap Vendor 1</span>
+					  <span class="badge bg-secondary label_text">PT Aspex</span>
+					  <span class="badge bg-secondary label_text">PT Dexter</span>
 				  </div>
 				</div>
 			  </div>
@@ -204,8 +232,8 @@
 					<h4 class="h5"><strong><a href="#" class="name">C008030</a></strong></h4>
 				  </div>
 				  <div class="col-sm-6 py-2">
-					<span class="badge bg-secondary label_text">Decom Vendor 1</span>
-					<span class="badge bg-secondary label_text">Scrap Vendor 1</span>
+					<span class="badge bg-secondary label_text">PT Cellsite</span>
+					<span class="badge bg-secondary label_text">PT Dexter</span>
 				  </div>
 				</div>
 			  </div>
@@ -222,8 +250,8 @@
 					<h4 class="h5"><strong><a href="#" class="name">C008040</a></strong></h4>
 				  </div>
 				  <div class="col-sm-6 py-2">
-					<span class="badge bg-secondary label_text">Decom Vendor 333</span>
-					<span class="badge bg-secondary label_text">Scrap Vendor 333</span>
+					<span class="badge bg-secondary label_text">PT Suntek</span>
+					<span class="badge bg-secondary label_text">PT Panjiva</span>
 				  </div>
 				</div>
 			  </div>
@@ -240,8 +268,8 @@
 					<h4 class="h5"><strong><a href="#" class="name">C008055</a></strong></h4>
 				  </div>
 				  <div class="col-sm-6 py-2">
-					<span class="badge bg-secondary label_text">Decom Vendor 11</span>
-					<span class="badge bg-secondary label_text">Scrap Vendor 11</span>
+					<span class="badge bg-secondary label_text">PT Aspex</span>
+					<span class="badge bg-secondary label_text">PT Tata</span>
 				  </div>
 				</div>
 			  </div>
@@ -258,8 +286,8 @@
 					<h4 class="h5"><strong><a href="#" class="name">C008066</a></strong></h4>
 				  </div>
 				  <div class="col-sm-6 py-2">
-					<span class="badge bg-secondary label_text">Decom Vendor 22</span>
-					<span class="badge bg-secondary label_text">Scrap Vendor 22</span>
+					<span class="badge bg-secondary label_text">PT Suntek</span>
+					<span class="badge bg-secondary label_text">PT Tata</span>
 				  </div>
 				</div>
 			  </div>
@@ -276,8 +304,8 @@
 					<h4 class="h5"><strong><a href="#" class="name">N001010</a></strong></h4>
 				  </div>
 				  <div class="col-sm-6 py-2">
-					  <span class="badge bg-secondary label_text">Decom Vendor 11</span>
-					  <span class="badge bg-secondary label_text">Scrap Vendor 11</span>
+					  <span class="badge bg-secondary label_text">PT Suntek</span>
+					  <span class="badge bg-secondary label_text">PT Panjiva</span>
 				  </div>
 				</div>
 			  </div>
@@ -294,8 +322,8 @@
 					<h4 class="h5"><strong><a href="#" class="name">N001022</a></strong></h4>
 				  </div>
 				  <div class="col-sm-6 py-2">
-					<span class="badge bg-secondary label_text">Decom Vendor 1</span>
-					<span class="badge bg-secondary label_text">Scrap Vendor 1</span>
+					<span class="badge bg-secondary label_text">PT Cellsite</span>
+					<span class="badge bg-secondary label_text">PT Dexter</span>
 				  </div>
 				</div>
 			  </div>
@@ -312,8 +340,8 @@
 					<h4 class="h5"><strong><a href="#" class="name">N001045</a></strong></h4>
 				  </div>
 				  <div class="col-sm-6 py-2">
-					<span class="badge bg-secondary label_text">Decom Vendor 333</span>
-					<span class="badge bg-secondary label_text">Scrap Vendor 333</span>
+					<span class="badge bg-secondary label_text">PT Suntek</span>
+					<span class="badge bg-secondary label_text">PT Panjiva</span>
 				  </div>
 				</div>
 			  </div>
@@ -341,239 +369,26 @@
 
 
     
-    <div class="container">
-		<div class="table-responsive">
-		  <table class="table table-striped custom-table">
-			<!-- header -->
-			<thead>
-			  <tr>
-				<th scope="col">Site ID</th>
-				<th scope="col">Decom Vendor</th>
-				<th scope="col">Scrap Vendor</th>
-			  </tr>
-			</thead>
-  
-			<tbody>
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="./scraplist_details.html" class="name">C008009</a>
-				  </div>
-				</td>
-				<td>PT Cellsite</td>            
-				<td>PT Dexter</td>            
-			  </tr>
-			  
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="#" class="name">C008015</a>
-				  </div>
-				</td>
-				<td>Decom 22</td>            
-				<td>Scrap 22</td>            
-			  </tr>
-  
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="#" class="name">C008020</a>
-				  </div>
-				</td>
-				<td>Decom 1</td>            
-				<td>Scrap 1</td>            
-			  </tr>
-  
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="#" class="name">C008030</a>
-				  </div>
-				</td>
-				<td>Decom 1</td>            
-				<td>Scrap 1</td>            
-			  </tr>
-  
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="#" class="name">C008040</a>
-				  </div>
-				</td>
-				<td>Decom 333</td>            
-				<td>Scrap 333</td>            
-			  </tr>
-  
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="#" class="name">C008055</a>
-				  </div>
-				</td>
-				<td>Decom 11</td>            
-				<td>Scrap 11</td>            
-			  </tr>
-			  
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="#" class="name">C008066</a>
-				  </div>
-				</td>
-				<td>Decom 22</td>  
-				<td>Scrap 22</td>            
-			  </tr>
-  
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="#" class="name">N001010</a>
-				  </div>
-				</td>
-				<td>Decom 11</td>  
-				<td>Scrap 11</td>            
-			  </tr>
-  
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="#" class="name">N001022</a>
-				  </div>
-				</td>
-				<td>Decom 1</td>  
-				<td>Scrap 1</td>            
-			  </tr>
-  
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="#" class="name">N001045</a>
-				  </div>
-				</td>
-				<td>Decom 333</td>  
-				<td>Scrap 333</td>            
-			  </tr>
-  
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="#" class="name">N001058</a>
-				  </div>
-				</td>
-				<td>Decom 1</td>
-				<td>Scrap 1</td>  
-    
-			  </tr>
-			  
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="#" class="name">S008009</a>
-				  </div>
-				</td>
-				<td>Decom 2</td>   
-				<td>Scrap 2</td>            
-			  </tr>
-  
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="#" class="name">S008017</a>
-				  </div>
-				</td>
-				<td>Decom 1</td>
-				<td>Scrap 1</td>           
-			  </tr>
-  
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="#" class="name">S008035</a>
-				  </div>
-				</td>
-				<td>Decom 111</td>
-				<td>Scrap 111</td>          
-			  </tr>
-  
-			  <tr scope="row">
-				<td class="pl-2">
-				  <!-- This d-flex thing needed? -->
-				  <div class="d-flex align-items-center"> 
-					<a href="#" class="name">S008040</a>
-				  </div>
-				</td>
-				<td>Decom 33</td>
-				<td>Scrap 33</td>          
-			  </tr>
-  
-			</tbody>
-		  </table>
-
-			<!-- Standard Pagination -->
-			<nav aria-label="Page navigation example">
-				<ul class="pagination justify-content-end">
-					<li class="page-item disabled">
-						<a class="page-link">Previous</a>
-					</li>
-					<li class="page-item active" aria-current="page">
-						<span class="page-link">1</span>
-					</li>
-					<li class="page-item"><a class="page-link" href="#">2</a></li>
-					<li class="page-item"><a class="page-link" href="#">3</a></li>
-					<li class="page-item">
-					<a class="page-link" href="#">Next</a>
-					</li>
-				</ul>
-			</nav>
-
-
-
-
-		  <!-- <div class="col-md-6 offset-2">
-			<div class="pagination-container wow zoomIn mar-b-1x" data-wow-duration="0.5s">
-				<ul class="pagination">
-					<li class="pagination-item--wide first"> <a class="pagination-link--wide first" href="#">Previous</a> </li>
-					<li class="pagination-item first-number is-active"> <a class="pagination-link" href="#">1</a> </li>
-					<li class="pagination-item"> <a class="pagination-link" href="#">2</a> </li>
-					<li class="pagination-item"> <a class="pagination-link" href="#">3</a> </li>
-					<li class="pagination-item"> <a class="pagination-link" href="#">4</a> </li>
-					<li class="pagination-item"> <a class="pagination-link" href="#">5</a> </li>
-					<li class="pagination-item--wide last"> <a class="pagination-link--wide last" href="#">Next</a> </li>
-				</ul>
-			</div>
-		  </div> -->
-
-
-		</div>
-	  </div>
-
-	  	<!-- Hardcoded styles to be moved into css -->
 	<div class="container" style="text-align: right;">
-		<button class="btn btn-primary px-4" type="button" onclick="alert('Download')">Download</button>
+		<a class="btn btn-primary px-4" type="button" href="files/Sample-Spreadsheet-100-rows.xlsx" download>Download</a>
 	</div>
 	<br>
 
 	</section>
 
 	<!-- js from homepage -->
+	<!-- <script>
+		function update_status_bar(str){
+			$("#status_bar").text(str);
+		}
+	</script> -->
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/scraplist.js"></script>
+
 
 	<!-- js from table -->
 	<script src="js/jquery-3.3.1.min.js"></script>

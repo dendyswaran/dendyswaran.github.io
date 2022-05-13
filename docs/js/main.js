@@ -24,7 +24,6 @@
 		$(dataMenu).toggleClass("d-none")
 	})
 
-	$('#pick-date').pickadate();
-	
+	// $('#pick-date').pickadate();
 
 })(jQuery);

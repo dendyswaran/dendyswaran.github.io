@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url(pagination.css);
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -1634,8 +1635,9 @@ pre {
   .form-control::placeholder {
     color: #6c757d;
     opacity: 1; }
+
   .form-control:disabled, .form-control[readonly] {
-    background-color: #e9ecef;
+    background-color: #e9ecef !important;
     opacity: 1; }
 
 select.form-control:focus::-ms-value {
@@ -8366,6 +8368,7 @@ h1, h2, h3, h4, h5,
 
   .form-control {
     height: 50px !important;
+    width:300px;
     background: #fff !important;
     color: #000 !important;
     font-size: 14px;
@@ -8374,7 +8377,7 @@ h1, h2, h3, h4, h5,
     box-shadow: none !important;
     border: 1px solid rgba(0, 0, 0, 0.1); }
     .form-control:focus, .form-control:active {
-      border-color: #000; }
+    border-color: #000; }
 
   /* Highest priority breadcum */
   .breadcumb {
@@ -8449,8 +8452,8 @@ h1, h2, h3, h4, h5,
     background-color: deepskyblue;
     color: white;
 }
-#input_text {
-    width: 99%;
+.input_text {
+    width: 99% !important;
 }
 
 /* basic styling */
@@ -8480,13 +8483,12 @@ a {
 h2 {
   font-size: 20px; }
 
-/* top padding for smaller screen sizes (when become multiple rows)*/
-@media screen and (max-width: 980px) {
-  .col-sm-6 {
-    padding-top: 10px;
-    }
+.search_bar {
+  width: 100%;
 }
-
+.search_btn {
+  padding-top: 7px;
+}
 
 /* redefine btn_primary to red themed */
 .btn-primary {
@@ -8591,7 +8593,109 @@ h2 {
       }
     }
 
-
     .navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {        
       flex-wrap: wrap !important;
   } 
+
+  /* drop down list css start */
+  
+  .custom-dropdown .btn:active, .custom-dropdown .btn:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none; }
+  
+  .custom-dropdown .btn.btn-custom {
+    border: 1px solid #efefef; }
+  
+  .custom-dropdown .dropdown-link {
+    color: #888;
+    font-size: 15px;
+    display: inline-block;
+    padding: 8px 15px;
+    width: 100%;
+    height: 50px;
+    background: white;
+    position: relative; }
+    .custom-dropdown .dropdown-link:after {
+      content: ""; }
+  
+  .custom-dropdown .dropdown-item {
+    font-size: 14px;
+    color: #888;
+    border-bottom: 1px solid #efefef;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    position: relative; }
+    .custom-dropdown .dropdown-item:before {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 2;
+      background: #007bff;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease; }
+    .custom-dropdown .dropdown-item:last-child {
+      border-bottom: none; }
+    .custom-dropdown .dropdown-item:hover {
+      color: #000;
+      padding-left: 20px; }
+      .custom-dropdown .dropdown-item:hover:before {
+        opacity: 1;
+        visibility: visible;
+        width: 6px; }
+  
+  /* .custom-dropdown .dropdown-menu {
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 0px !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+    left: 0 !important;
+    -webkit-transition: .3s margin-top ease, .3s opacity ease, .3s visibility ease;
+    -o-transition: .3s margin-top ease, .3s opacity ease, .3s visibility ease;
+    transition: .3s margin-top ease, .3s opacity ease, .3s visibility ease;
+    visibility: hidden; } */
+
+    .custom-dropdown .dropdown-menu.active {
+      opacity: 1;
+      visibility: visible;
+      margin-top: 20px !important; }
+  
+  .custom-dropdown.show .dropdown-link {
+    color: #fff;
+    background: #007bff; }
+
+
+  .matching_item {
+    color: white !important;
+    font-weight: bold;
+    border-color: black;
+    width: 50px;
+    height: 50px;
+    padding-top: 0px;
+  }
+
+  .matching_item.matching_false {
+    padding-top: 0px;
+    background-color: red;
+    font-size:35px;
+
+  }
+  .matching_true {
+    padding-top: 7px;
+    background-color: var(--green);
+    font-size:25px;
+
+  }
+
+  /* drop down list css end */
